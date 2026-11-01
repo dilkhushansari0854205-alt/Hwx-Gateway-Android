@@ -1,0 +1,6 @@
+{
+  "name": "HWX SMS Gateway Backend",
+  "description": "Production-oriented multi-user Android SMS Gateway backend server with Firebase Admin, WebSocket device orchestration, dual-SIM management, and OpenAPI Swagger docs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

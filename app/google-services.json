@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "878247128426",
+    "project_id": "hwxgetway",
+    "storage_bucket": "hwxgetway.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878247128426:android:915903973bd9cd17c6c913",
+        "android_client_info": {
+          "package_name": "com.hwxgetway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878247128426-gqes119bjv82088gs2s12ia4oofmeft0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "[REDACTED-SECRET]"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878247128426-gqes119bjv82088gs2s12ia4oofmeft0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

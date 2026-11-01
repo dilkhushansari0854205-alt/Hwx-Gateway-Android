@@ -1,0 +1,31 @@
+# Render Blueprint Specification for HWX SMS Gateway Backend
+# Important Operational Note:
+# Render Free Web Services automatically spin down after 15 minutes of inactivity.
+# When an instance spins down, active WebSocket device connections will be terminated.
+# For persistent, always-on Android SMS Gateway connectivity and real-time delivery,
+# consider upgrading to a Render Starter ($7/mo) instance or setting auto-reconnect
+# in the Android client application.
+
+services:
+  - type: web
+    name: hwx-sms-gateway
+    runtime: node
+    plan: starter
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: FIREBASE_SERVICE_ACCOUNT
+        sync: false # Set securely in Render Dashboard as a secret environment variable
+      - key: WEBHOOK_TIMEOUT_MS
+        value: 10000
+      - key: MAX_SMS_PER_MINUTE
+        value: 60
+      - key: CORS_ORIGIN
+        value: "*"
